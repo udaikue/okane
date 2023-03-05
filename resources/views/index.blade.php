@@ -9,5 +9,27 @@
 </head>
 <body>
     <h1>シュッピ</h1>
+    <div>
+        <table>
+            <thead>
+                <tr>
+                    <th>カテゴリ</th>
+                    <th>円</th>
+                    <th>メモ</th>
+                    <th>繰り返し</th>
+                </tr>
+            </thead>
+            <tbody>
+            @foreach($outgoings as $outgoing)
+                <tr>
+                    <td>{{ $outgoing->category }}</td>
+                    <td>{{ $outgoing->yen }}</td>
+                    <td>{{ $outgoing->memo }}</td>
+                    <td>{{ $outgoing->repeated }}</td>
+                </tr>
+            @endforeach
+            </tbody>
+        </table>
+    </div>
 </body>
 </html>
