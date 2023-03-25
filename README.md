@@ -29,6 +29,16 @@ $ sail down
 ```
 
 ```
+// Webpack をビルド
+$sail npm run dev
+```
+
+```
+// シーティングを実行
+$ sail artisan db:seed
+```
+
+```
 // 起動しているアプリケーションコンテナ内部にログイン
 $ sail shell
 ```

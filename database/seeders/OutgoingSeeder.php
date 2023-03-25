@@ -46,7 +46,7 @@ class OutgoingSeeder extends Seeder
         DB::table('outgoings')->insert([
             'category' => '本',
             'yen' => 3520,
-            'date' => '2023-03-11',
+            'date' => '2023-02-11',
             'repeated' => False,
             'memo' => 'プロフェッショナルWebプログラミング Laravel',
             'created_at' => now(),
